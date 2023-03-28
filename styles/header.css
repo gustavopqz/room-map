@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    min-height: 17em;
+    flex-direction: column;
+}
+
+#headerBackground{
+    position: absolute;
+    width: 100%;
+    height: 16em;
+    background-color: #ffffff;
+    opacity: .8;
+    z-index: -1;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5% 0 5%;
+}
+
+#modality{
+    background-color: #ee9745;
+}
+
+h1{
+    text-align: center;
+    padding-top: 1%;
+}
+
+@media (max-width: 680px){
+    header{
+        min-height: 19em;
+    }
+    #headerBackground{
+        min-height: 18em;
+    }
+    #logo{
+        width: 130px;
+    }
+    #professors{
+        font-size: .8em;
+        color: #000;
+        padding-inline: 5%;
+    }
+    h1{
+        font-size: 1.2em;
+        margin-top: 15px;
+    }
+}

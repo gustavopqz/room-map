@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/selects.css">
+    <link rel="stylesheet" href="./styles/table.css">
+    <link rel="shortcut icon" href="./img/favicon-unef.ico" type="image/x-icon">
+    <script src="./scripts/search.js" defer></script>
+
+    <script>
+        //Set url in sessionStorage to use on fetch's
+        sessionStorage.setItem('url', document.URL.split('/').splice('0',3).join('/'))
+        const url = sessionStorage.url
+        const token = sessionStorage.getItem('token')
+    </script>
+    
+    <title>Mapa de salas</title>
+</head>
+<body>
+    <div id="fade"></div>
+    <header>
+        <div id="headerBackground"></div>
+
+        <div id="top">
+            <img id="logo" src="./img/unef.png" alt="unef_logo" width="200px">
+            <!-- <select name="modality" id="modality">
+                <option value="graduação">Modalidade: Graduação</option>
+                <option value="pós">Modalidade: Pós-Graduação</option>
+            </select> -->
+        </div>
+
+        <h1>MAPA DE SALAS</h1>
+
+        <div id="selecting">
+            <select name="curso" id="curso">
+                <option value="curso">CURSO</option>
+                <option value="ADMINISTRAÇÃO">ADMINISTRAÇÃO</option>
+                <option value="ARQUITETURA E URBANISMO">ARQUITETURA E URBANISMO</option>
+                <option value="BIOMEDICINA">BIOMEDICINA</option>
+                <option value="DESIGN DE INTERIORES">DESIGN DE INTERIORES</option>
+                <option value="DIREITO">DIREITO</option>
+                <option value="ENFERMAGEM">ENFERMAGEM</option>
+                <option value="ENGENHARIA CIVIL">ENGENHARIA CIVIL</option>
+                <option value="ENGENHARIA DE PRODUÇÃO">ENGENHARIA DE PRODUÇÃO</option>
+                <option value="ENGENHARIA ELÉTRICA">ENGENHARIA ELÉTRICA</option>
+                <option value="ENGENHARIA MECÂNICA">ENGENHARIA MECÂNICA</option>
+                <option value="ENGENHARIA QUÍMICA">ENGENHARIA QUÍMICA</option>
+                <option value="FARMÁCIA">FARMÁCIA</option>
+                <option value="FISIOTERAPIA">FISIOTERAPIA</option>
+                <option value="NÚCLEO COMUM">NÚCLEO COMUM</option>
+                <option value="NUTRIÇÃO">NUTRIÇÃO</option>
+                <option value="ODONTOLOGIA">ODONTOLOGIA</option>
+                <option value="PUBLICIDADE E PROPAGANDA">PUBLICIDADE E PROPAGANDA</option>
+            </select>
+            <select name="turno" id="turno">
+                <option value="turno">TURNO</option>
+                <option value="MATUTINO">MATUTINO</option>
+                <option value="NOTURNO">NOTURNO</option>
+            </select>
+            <select name="dia" id="dia">
+                <option value="dia">DIA DA SEMANA</option>
+                <option value="SEGUNDA-FEIRA">SEGUNDA-FEIRA</option>
+                <option value="TERÇA-FEIRA">TERÇA-FEIRA</option>
+                <option value="QUARTA-FEIRA">QUARTA-FEIRA</option>
+                <option value="QUINTA-FEIRA">QUINTA-FEIRA</option>
+                <option value="SEXTA-FEIRA">SEXTA-FEIRA</option>
+                <option value="SÁBADO">SÁBADO</option>
+            </select>
+        </div>
+
+    </header>
+
+    <div id="tables">
+        <table id="myTable">
+            <tr>
+                <th>DISCIPLINA</th>
+                <th>TURMA</th>
+                <th>PROFESSOR(A)</th>
+                <th>SALA</th>
+                <th>MÓDULO</th>
+                <th>INÍCIO</th>
+                <th>FIM</th>    
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

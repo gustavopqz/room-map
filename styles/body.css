@@ -1,0 +1,24 @@
+body{
+    background: url('../img/unef_bj.jpg');
+    background-size: cover;
+}
+
+#fade{
+    width: 100%;
+    height: 100%;
+    background-color: #dddddd;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+@media (max-width: 680px){
+    body{
+        background: url('../img/gradiente-laranja-amarelo.png');
+        background-size: auto;
+        background-position: center;
+    }
+    #fade{
+        display: none;
+    }
+}

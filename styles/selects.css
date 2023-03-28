@@ -1,0 +1,42 @@
+#selecting{
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+select{
+    width: 23%;
+    padding: .6% 0;
+    max-width: 23%;
+    background-color: #fff;
+    border: 1px solid #ee9745;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+select:hover{
+    outline: none;
+}
+
+select option{
+    cursor: pointer;
+}
+
+@media (max-width: 680px){
+    #selecting{
+        flex-direction: column;
+        align-items: center;
+    }
+    select{
+        width: 90%;
+        max-width: 90%;
+        padding: 3% 0;
+        margin-top: 15px;
+        color: #000;
+    }
+}
